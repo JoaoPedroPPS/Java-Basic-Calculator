@@ -8,7 +8,7 @@ public class Main {
 		
 		calc calc = new calc();
 		
-		//Apresentação do menu
+		//ApresentaÃ§Ã£o do menu
 		
 		System.out.println("***** Calculadora em Java *****");
 		System.out.println("1- Soma");
@@ -16,19 +16,19 @@ public class Main {
 		System.out.println("3- Divisao");
 		System.out.println("4- Multiplicacao");
 
-		//seleção de Operações do Menu
+		//seleÃ§Ã£o de OperaÃ§Ãµes do Menu
 		
 		Number firstNumber;
 		Number secondNumber;
 		
-		Scanner leitura = new Scanner(System.in);
+		Scanner readOp = new Scanner(System.in);
 		Scanner readOne = new Scanner(System.in);
 		Scanner readTwo = new Scanner(System.in);
 		int select;
 		do {
 		System.out.println("digite um numero de selecao do menu: ");
 		
-		select = leitura.nextInt();
+		select = readOp.nextInt();
 		
 		//Soma
 		
@@ -86,7 +86,7 @@ public class Main {
 		}
 		
 		List<String> operations = calc.getLastOperation();
-		System.out.println("Operações realizadas");
+		System.out.println("OperaÃ§Ãµes realizadas");
 		for (String operation : operations) {
 			System.out.println(operation);
 		}
